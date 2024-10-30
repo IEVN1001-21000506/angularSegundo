@@ -27,4 +27,5 @@ export class AddMessageComponent implements OnInit {
       this.formGroup.reset();  
     }
   }
+  
 }

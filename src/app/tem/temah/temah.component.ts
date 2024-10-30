@@ -13,6 +13,6 @@ export class TemahComponent {
   @Output() mensaje2 = new EventEmitter<string>(); //propiedad de salida
 
   enviarMensaje(){
-    this.mensaje2.emit('Hola desde el hijo');
+    this.mensaje2.emit('Hola desde el hijo de tu corazon');
   }
 }

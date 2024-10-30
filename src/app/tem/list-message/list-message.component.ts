@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './list-message.component.html',
   styles: ``
 })
+
 export class ListMessageComponent {
   constructor(public messageService: MessageserviceService) {} 
 
