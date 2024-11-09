@@ -48,7 +48,7 @@ export default class EmpleadosComponent {
         this.mensaje = 'Empleado modificado con éxito.';
         this.mensajeTipo = 'exito';
       } else {
-        this.mensaje = 'No se encontró el empleado para modificar.';
+        this.mensaje = 'No se encontró el empleado para modificar. ';
         this.mensajeTipo = 'error';
       }
       this.editando = false;
