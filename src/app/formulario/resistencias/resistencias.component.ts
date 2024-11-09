@@ -17,6 +17,7 @@ export default class ResistenciasComponent {
   valorMax: number = 0;
   valorMin: number = 0;
   mostrarTabla: boolean = false;
+  mostrarTablaImpresion: boolean = false;  // Variable para controlar la impresión de la tabla
 
   resistenciasRegistradas: any[] = [];
 
@@ -48,7 +49,11 @@ export default class ResistenciasComponent {
 
     localStorage.setItem('resistencia', JSON.stringify(resistenciaParaGuardar));
 
-    this.mostrarTabla = true;
+  
+  }
+
+  imprimirTabla() {
+    this.mostrarTablaImpresion = true;  // Activa la visibilidad de la tabla de impresión
   }
 
   setTolerancia(opcion: string) {

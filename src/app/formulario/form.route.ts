@@ -8,10 +8,15 @@ export default[
     {
         path: 'resistencia',
         loadComponent:()=>import('./resistencias/resistencias.component'),
+        
     },
     {
         path: 'empleados',
         loadComponent:()=>import('./empleados/empleados.component'),
+    },
+    {
+        path: 'pizzeria',
+        loadComponent:()=>import('./pizzeria/pizzeria.component'),
     }
      
 ]as Routes

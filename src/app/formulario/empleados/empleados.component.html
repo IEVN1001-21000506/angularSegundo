@@ -27,7 +27,7 @@
         <input [(ngModel)]="nuevoEmpleado.horasTrabajadas" name="horasTrabajadas" type="number" placeholder="Horas trabajadas" required class="w-auto bg-gray-50 border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 shadow-sm transition-all duration-300 ease-in-out" />
       </div>
 
-      <button type="submit" class="w-full bg-red-600 text-black font-semibold py-3 px-4 rounded-lg hover:from-red-500 hover:to-red-700 transition-all duration-300 ease-in-out shadow-lg transform hover:scale-105">
+      <button type="submit" class="w-full bg-gray-500 text-white font-semibold py-3 px-4 rounded-lg hover:from-red-500 hover:to-red-700 transition-all duration-300 ease-in-out shadow-lg transform hover:scale-105">
         Registrar Empleado
       </button>
     </form>
@@ -37,11 +37,11 @@
   <div class="w-2/3">
     <h2 class="text-xl font-bold mb-4">Lista de Empleados</h2>
     <table class="max-w-sm text-sm text-left text-black-500 dark:text-white-400">
-      <thead class="text-xs text-white-700 uppercase bg-gray-50 dark:bg-gray-100 dark:text-gray-400">
+      <thead class="py-2 px-4 text-white-700 bg-gray-300 dark:bg-gray-100 dark:text-whites">
         <tr>
           <th class="px-6 py-3 border-b-2 border-gray-300">Matrícula</th>
           <th class="px-6 py-3 border-b-2 border-gray-300">Nombre</th>
-          <th class="px-6 py-3 border-b-2 border-gray-300">Correo</th>
+          <th class="px-6 py-3 border-b-2 border-gray-300">Correo</th>  
           <th class="px-6 py-3 border-b-2 border-gray-300">Edad</th>
           <th class="px-6 py-3 border-b-2 border-gray-300">Horas Trabajadas</th>
           <th class="px-6 py-3 border-b-2 border-gray-300">Pago por Horas</th>
@@ -61,9 +61,9 @@
           <td>$ {{ calcularPago(empleado) }}</td>
         </tr>
       </tbody>
-      <tfoot class="bg-gray-50  divide-gray-200">
+      <tfoot class="bg-gray-100  divide-gray-200">
         <tr class="w-auto">
-          <td colspan="5" class="px-6 py-4 text-left font-bold">Total a Pagar:</td>
+          <td colspan="5" class="px-6 py-4 text-left font-bold">Total:</td>
           <td class="px-6 py-4 text-left font-bold">${{ calcularTotalPago() }}</td>
         </tr>
       </tfoot>
@@ -76,12 +76,12 @@
     {{ mensaje }}
   </div>
     <div class="mt-8">
-      <label class="block text-sm font-medium">Buscar Matrícula:</label>
+      <label class="block text-sm font-medium">Buscar:</label>
       <input [(ngModel)]="matriculaBuscar" name="matriculaBuscar" placeholder="Matrícula" class="w-auto border border-gray-300 p-2 rounded" />
       
       <div class="flex space-x-4 mt-4">
-        <button (click)="modificarEmpleadoPorMatricula()" class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">✏️ Modificar </button>
-        <button (click)="eliminarEmpleadoPorMatricula()" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">🗑️ Eliminar </button>
+        <button (click)="modificarEmpleadoPorMatricula()" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-200">Modificar </button>
+        <button (click)="eliminarEmpleadoPorMatricula()" class="bg-red-700 text-white py-2 px-4 rounded hover:bg-red-300">Eliminar </button>
       </div>
     </div>
   </div>

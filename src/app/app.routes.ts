@@ -8,6 +8,12 @@ export const routes: Routes = [
     {
         path:'formulario',
         loadChildren:()=> import('./formulario/form.route')
+        
+    },
+    {
+        path:'pizzeria',
+        loadChildren:()=> import('./formulario/pizzeria/pizzeria.routes')
+        
     }
       
 ];
