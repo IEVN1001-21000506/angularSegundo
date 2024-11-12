@@ -10,10 +10,5 @@ export const routes: Routes = [
         loadChildren:()=> import('./formulario/form.route')
         
     },
-    {
-        path:'pizzeria',
-        loadChildren:()=> import('./formulario/pizzeria/pizzeria.routes')
-        
-    }
       
 ];
